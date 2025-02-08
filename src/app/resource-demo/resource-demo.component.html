@@ -1,0 +1,15 @@
+<div class="container w-50 h-full">
+  <div class="d-flex w-100 card h-100 justify-items-center p-4">
+    <label  class="form-label Search" >Search</label>
+    <input aria-placeholder="Enter search value" #input class="form-control w-50" (keyup)="setSerachValue(input.value)" />
+  </div>
+
+  @if(users.isLoading()){
+    <mat-spinner />
+  }
+  <mat-list>
+  @for(user of users.value(); track user.id ) {
+      <mat-list-item>{{user.name}}</mat-list-item>
+  }
+</mat-list>
+</div>
