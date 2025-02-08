@@ -1,0 +1,10 @@
+
+
+mat-list-item {
+    width: 50%;
+    border: 1px solid black;
+    height: 30px !important;
+    margin: 1px;
+    border-radius: 10px;
+   
+}
